@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="lvmama.fed.xiaohu" />
+<meta name="copyright" content="fed.lvmama" />
+<meta name="keywords" content="驴妈妈 前端" />
+<meta name="description" content="fed.lvmama" />
+<title>使用CSS3绘制驴妈妈FED的logo</title>
+<style>
+body{margin:0;padding:0;background:#f1f1f1;font:12px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif}
+.logo_left{
+	width:270px;
+	height:270px;
+	background:#d38; 
+	border-radius:50px;
+	-moz-border-radius:50px;/* old firefox */
+	-webkit-transform:rotate(30deg);
+	-moz-transform:rotate(30deg);
+	-0-transform:rotate(30deg);
+	transform:rotate(30deg);
+	position:relative;
+	overflow:hidden;
+}
+.logo_right{
+	width:270px;
+	height:270px;
+	background:#f1f1f1;
+	border-radius:50px;
+	-moz-border0radius:50px;/* old firefox */
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-0-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	position:absolute;
+	left:65px;
+	top:0;
+	z-index:100;
+}
+.logo_right_bottom{
+	width:150px;
+	height:35px;
+	background:#f1f1f1;
+	position:absolute;
+	top:73px;
+	left:-1px;
+}
+.logo_right_bg{
+	width:270px;
+	height:270px;
+	overflow:hidden;
+	position:absolute;
+	border-radius:50px;
+	-moz-border0radius:50px;/* old firefox */
+}
+.logo_right_box{
+	width:270px;
+	height:270px;
+	background:#e38;
+	border-radius:40px;
+	-moz-border0radius:40px;/* old firefox */
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-0-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+	position:absolute;
+	left:107px;
+	top:0px;
+	z-index:200;
+}
+.main{
+	width:270px;
+	margin:100px auto;
+}
+h1{
+	text-align:center; 
+	font-size:40px; 
+	font-weight:500;
+	color:#333;
+	text-shadow:0 2px 0px rgba(255,255,255,0.8);
+}
+a{
+	color:#4B9BC9;
+	text-decoration:none;
+}
+.copyright{
+	text-align:center; 
+	margin:50px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="main">
+
+<div class="logo_left">
+	<div class="logo_right"></div>
+	<div class="logo_right_bg">
+    	<div class="logo_right_box">
+            	<div class="logo_right_bottom"></div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<h1>The lvmamaFED logo in CSS</h1>
+<div class="copyright">Copyright © 2013 <a href="http://fed.lvmama.com/" target="_blank">lvmama fed</a>. All Rights Reserved.</div>
+
+</body>
+</html>
